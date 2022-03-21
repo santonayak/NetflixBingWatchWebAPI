@@ -1,0 +1,12 @@
+curl -XGET url \
+-H 'key:value' \
+-d 'json-body' -v
+
+
+curl -XGET http://localhost:8080/allData \
+-H 'X-Auth-Token:123' -v
+
+curl -XGET http://localhost:8080/allData -v
+
+curl -XGET 'http://localhost:8080/tvshows?count=2' \
+-H 'X-Auth-Token:123' -v
