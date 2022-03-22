@@ -16,7 +16,7 @@ public class CSVParserService {
     static List<Netflix> showList = new ArrayList<>();
 
     static {
-        String file = "/Users/santonayak/IdeaProjects/BingeWatch/src/netflix.csv";
+        String file = "/Users/santonayak/Downloads/NetfllixBingeWebAPI/src/main/resources/netflix.csv";
         String line = "";
 
         BufferedReader reader = null;
