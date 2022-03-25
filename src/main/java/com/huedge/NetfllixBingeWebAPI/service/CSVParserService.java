@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
@@ -83,7 +84,14 @@ public class CSVParserService {
     }
 
     public static List<Netflix> getByDateRange(String startDateStr, String endDateStr) {
-        Date startDate = null;
+
+//        SimpleDateFormat formatter1=new SimpleDateFormat("dd/MM/yyyy");
+//
+//
+//        Date date1=formatter1.parse(startDateStr);
+//
+//        Date startDate = new SimpleDateFormat("dd/MM/yyyy").parse(startDateStr);  ;
+        Date startDate =null;
         Date endDate = null; // if endDateStr == null then return new Date
 
         return showList.stream().filter(e -> {

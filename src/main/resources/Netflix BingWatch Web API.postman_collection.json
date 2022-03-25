@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "685eb7c2-acab-4d09-b983-2c9fbaa38344",
+		"name": "Netflix BingWatch Web API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/allData",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"value": "123",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/allData",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"allData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/tvshows?count=3",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"value": "11",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/tvshows?count=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tvshows"
+					],
+					"query": [
+						{
+							"key": "count",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/tvshows?movieType=Horror",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"value": "33",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/tvshows?movieType=Comedies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tvshows"
+					],
+					"query": [
+						{
+							"key": "movieType",
+							"value": "Comedies"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/tvshows?country=India",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"value": "11",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/tvshows?country=India",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tvshows"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "India"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/tvshows?startDate=23-Dec-16",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"value": "11",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/tvshows?startDate=23-Dec-16",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tvshows"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "23-Dec-16"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
